@@ -1,0 +1,52 @@
+// @font-face {
+//   font-family: 'SF Pro Display';
+//   src: url('../../fonts/SF-Pro-Display-Regular.otf') format('opentype')
+// }
+// @font-face {
+//   font-family: 'Helvetica Neue';
+//   src: url('../../fonts/helvetica-neue-regular.ttf')
+// }
+body {
+  // font-family:'SF Pro Display',serif, sans-serif!important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont;
+  font-weight: 500;
+  color: #16151C !important;
+}
+html.ios {
+  // --ion-default-font: 'SF Pro Display',serif, sans-serif!important;
+  --ion-default-font: -apple-system, system-ui, BlinkMacSystemFont;
+  font-weight: 500;
+  color: #16151C !important;
+}
+html.md {
+  // --ion-default-font: 'SF Pro Display',serif, sans-serif!important;
+  --ion-default-font: -apple-system, system-ui, BlinkMacSystemFont;
+  font-weight: 500;
+  color: #16151C !important;
+}
+
+html {
+  // --ion-dynamic-font: -apple-system-body;
+  // --ion-font-family: 'SF Pro Display',serif, sans-serif!important;
+  --ion-default-font: -apple-system, system-ui, BlinkMacSystemFont;
+  color: #16151C !important;
+}
+
+.header-md {
+  box-shadow: none!important;
+  color: #16151C !important;
+}
+.footer-md {
+  box-shadow: none!important;
+  color: #16151C !important;
+}
+.title-default {
+  color: #16151C !important;
+}
+ion-toolbar {
+  color: #16151C !important;
+}
+
+.valid {
+  border-color: #FF4444;
+}

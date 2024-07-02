@@ -1,0 +1,60 @@
+<!-- <ion-page>
+  <ion-content> -->
+    <div class="h-[100vh] flex flex-col gap-4 items-center scroll">
+      <div class="w-full bg-[#392C7E] flex justify-between items-center px-4 py-8">
+        <div class="flex justify-between w-full">
+          <div class="w-full h-full flex flex-col gap-1 justify-center">
+            <span class="text-2xl text-white font-900">Thêm Khách hàng</span>
+            <span class="text-lg text-white font-500">{{user.fullName}} ({{user.role}})</span>
+          </div>
+        </div>
+      </div>
+      <div class="w-[90%] flex gap-2 flex-col">
+        <span class="text-xl text-[#392D7E]">Thông tin cá nhân</span>
+        <div class="flex flex-col gap-2 w-full">
+          <span class="text-[#212121]">Tên Khách hàng <span class="text-red-500">*</span></span>
+          <input type="text" class="w-full h-11 rounded-lg" placeholder="Tên cộng tác viên" [(ngModel)]="name">
+        </div>
+        <div class="flex flex-col gap-2 w-full">
+          <span class="text-[#212121]">Số điện thoại <span class="text-red-500">*</span></span>
+          <input type="text" class="w-full h-11 rounded-lg" placeholder="Số điện thoại" [(ngModel)]="phone">
+        </div>
+        <div class="flex flex-col gap-2 w-full">
+          <span class="text-[#212121]">Địa chỉ</span>
+          <input type="text" class="w-full h-11 rounded-lg" placeholder="Địa chỉ" [(ngModel)]="address">
+        </div>
+      </div>
+      <button class="w-[90%] bg-[#392D7E] text-white" (click)="save()">Lưu thông tin</button>
+
+      <div *ngIf="id > 0" class="w-[90%] flex gap-2 flex-col">
+        <span class="text-xl text-[#392D7E]">Cập nhật ảnh</span>
+        <form (ngSubmit)="onSubmit()">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="file">
+            Upload Image
+          </label>
+          <div class="grid grid-cols-2 gap-2 w-full">
+            <div class="">
+              <input type="file" (change)="onFilesSelected($event)"
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="file" multiple />
+            </div>
+            <button type="submit"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+              Upload
+            </button>
+          </div>
+
+          <div *ngIf="images.length > 0" class="w-full overflow-y-scroll">
+            <div class="w-full grid grid-cols-2 gap-2">
+              <div class="w-full grid-1"  *ngFor="let imge of images" >
+                <img [src]="imge.url" class="w-full aspect-square " alt="imge">
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  <!-- </ion-content>
+</ion-page> -->

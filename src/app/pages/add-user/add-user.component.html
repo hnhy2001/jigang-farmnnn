@@ -1,0 +1,42 @@
+<div class="h-[100vh] flex flex-col gap-4 items-center">
+  <div class="w-full bg-[#392C7E] flex justify-between items-center px-4 py-8">
+    <div class="flex justify-between w-full">
+      <div class="w-full h-full flex flex-col gap-1 justify-center">
+        <span class="text-2xl text-white font-900">Thêm tài khoản</span>
+        <span class="text-lg text-white font-500">{{user.fullName}} ({{user.role}})</span>
+      </div>
+    </div>
+  </div>
+  <div class="w-[90%] flex gap-2 flex-col">
+    <span class="text-xl text-[#392D7E]">Thông tin cá nhân</span>
+    <div class="flex flex-col gap-2 w-full">
+      <span class="text-[#212121]">Tên cộng tác viên <span class="text-red-500">*</span></span>
+      <input type="text" class="w-full h-11 rounded-lg" placeholder="Tên cộng tác viên" [(ngModel)]="fullName">
+    </div>
+    <div class="flex flex-col gap-2 w-full">
+      <span class="text-[#212121]">Số điện thoại <span class="text-red-500">*</span></span>
+      <input type="text" class="w-full h-11 rounded-lg" placeholder="Số điện thoại" [(ngModel)]="phone">
+    </div>
+    <div class="flex flex-col gap-2 w-full">
+      <span class="text-[#212121]">Địa chỉ</span>
+      <input type="text" class="w-full h-11 rounded-lg" placeholder="Địa chỉ" [(ngModel)]="address">
+    </div>
+
+    <div class="flex flex-col gap-2 w-full">
+      <span class="text-[#212121]">Email</span>
+      <input type="text" class="w-full h-11 rounded-lg" placeholder="Email" [(ngModel)]="email">
+    </div>
+  </div>
+  <div class="w-[90%] flex gap-2 flex-col">
+    <span class="text-xl text-[#392D7E]">Thông tin tài khoản</span>
+    <div class="flex flex-col gap-2 w-full">
+      <span class="text-[#212121]">Tài khoản <span class="text-red-500">*</span></span>
+      <input type="text" class="w-full h-11 rounded-lg" placeholder="Tài khoản" [(ngModel)]="userName">
+    </div>
+    <!-- <div class="flex flex-col gap-2 w-full">
+      <span class="text-[#212121]">Mật khẩu <span class="text-red-500">*</span></span>
+      <input type="text" class="w-full h-11 rounded-lg" placeholder="Mật khẩu" [(ngModel)]="password">
+    </div> -->
+  </div>
+  <button class="bg-[#392D7E] h-11 text-white w-[90%]" (click)="save()">Lưu thông tin</button>
+</div>

@@ -1,0 +1,18 @@
+ion-select {
+  --border-radius: 8px!important;
+  min-height: 44px!important;
+  height: 44px!important;
+  outline: none!important;
+  :host(.select-fill-outline.select-expanded), :host(.select-fill-outline.ion-focused) {
+      --border-color: none!important;
+      --border-color: #BDBDBD!important;
+  }
+  --placeholder-color: #BDBDBD!important;
+  --border-color: #BDBDBD!important;
+}
+:host(.select-label-placement-floating:not(.label-floating)) .native-wrapper .select-placeholder {
+    opacity: 1!important;
+}
+.valid-select {
+  --border-color: #FF4444!important;
+}

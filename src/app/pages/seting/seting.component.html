@@ -1,0 +1,37 @@
+<div class="h-[100vh] flex flex-col gap-4 items-center">
+  <div class="w-full bg-[#392C7E] flex justify-between items-center px-4 py-8">
+    <div class="flex justify-between w-full">
+      <div class="w-full h-full flex flex-col gap-1 justify-center">
+        <span class="text-2xl text-white font-900">Cài đặt</span>
+        <span class="text-lg text-white font-500">{{user.fullName}} ({{user.role}})</span>
+      </div>
+    </div>
+  </div>
+  <div class="w-[90%] flex flex-col gap-4">
+    <div class="flex flex-col pb-2 border-b">
+      <span class="text-gray-500">Số điện thoại</span>
+      <span>{{user.phone}}</span>
+    </div>
+
+    <div class="flex flex-col pb-2 border-b">
+      <span class="text-gray-500">Tài khoản</span>
+      <span>{{user.fullName}}</span>
+    </div>
+
+    <div class="flex flex-col pb-2 border-b">
+      <span class="text-gray-500">Email</span>
+      <span>{{user.email}}</span>
+    </div>
+
+    <div class="flex flex-col pb-2 border-b">
+      <span class="text-gray-500">Địa chỉ</span>
+      <span>{{user.address}}</span>
+    </div>
+
+    <button class="w-full flex gap-2 h-16 cursor-pointer items-center bg-[#392C7E] px-4" (click)="signout()">
+
+      <i class="fa-solid fa-arrow-right-from-bracket text-white"></i>
+      <span class="text-white">Đăng xuất</span>
+    </button>
+  </div>
+</div>

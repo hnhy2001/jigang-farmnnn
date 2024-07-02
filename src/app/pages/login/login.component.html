@@ -1,0 +1,17 @@
+<div class="flex flex-col gap-4 pt-16 items-center w-full">
+  <img src="../../../assets/icon/logo.png" alt="" class="w-[60%] aspect-square">
+  <h1 class="text-[#CD18F2] text-5xl">name</h1>
+  <div class="flex flex-col gap-2 w-[90%]">
+    <span class="text-[#212121]">Tài khoản <span class="text-red-500">*</span></span>
+    <input type="text" [(ngModel)]="username" class="w-full h-11 rounded-lg" placeholder="Tên tài khoản">
+  </div>
+
+  <div class="flex flex-col gap-2 w-[90%]">
+    <span class="text-[#212121]">Mật khẩu <span class="text-red-500">*</span></span>
+    <input type="password" [(ngModel)]="password" class="w-full h-11 rounded-lg" placeholder="Mật khẩu">
+  </div>
+
+  <div class="w-full pt-8 flex justify-center">
+    <button (click)="login()" class="w-[90%] h-11 bg-[#392C7E] text-[#FFFFFF] text-xl !rounded-lg font-500">Đăng nhập</button>
+  </div>
+</div>

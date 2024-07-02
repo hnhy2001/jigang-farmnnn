@@ -1,0 +1,25 @@
+input {
+  background-color: #ffffff !important;
+  height: 44px !important;
+  border-radius: 8px;
+  padding: 13px 16px 13px 16px !important;
+  outline: none;
+  border: 1px solid #a2a1a8;
+}
+
+input::placeholder {
+  color: #bdbdbd !important;
+}
+input:disabled {
+  background: #a2a1a8!important;
+}
+textarea::placeholder {
+  color: #bdbdbd !important;
+}
+textarea {
+  background-color: #ffffff !important;
+  border-radius: 8px;
+  padding: 13px 16px 13px 16px !important;
+  outline: none;
+  border: 1px solid #a2a1a8;
+}

@@ -1,0 +1,26 @@
+<div class="h-[100vh] flex flex-col gap-4 items-center">
+  <div class="w-full bg-[#392C7E] flex justify-between items-center px-4 py-8">
+    <div class="flex justify-between w-full">
+      <div class="w-full h-full flex flex-col gap-1 justify-center">
+        <span class="text-2xl text-white font-900">Danh sách Khách Hàng</span>
+        <span class="text-lg text-white font-500">{{user.fullName}} ({{user.role}})</span>
+        <span class="text-sm text-white font-sans">Tổng số khách hàng: {{totalElement}}</span>
+      </div>
+      <div class="py-2">
+        <i class="fa-solid fa-user-plus text-2xl text-white" (click)="create()"></i>
+      </div>
+    </div>
+  </div>
+  <div class="w-full flex justify-center">
+    <input type="text" class="w-[75%] h-11 rounded-none" placeholder="search">
+    <button class="bg-[#392C7E] w-[15%] h-11 !rounded-none"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+  </div>
+  <div class="flex flex-col gap-4 w-[90%]" *ngFor="let menu of listData">
+    <div (click)="edit(menu.id)" class="w-full h-full flex flex-col gap-2 hover:bg-gray-300 transition duration-300 ease-in-out p-2 cursor-pointer rounded-sm">
+      <span>{{menu.name}}</span>
+      <span>{{menu.phone}}</span>
+      <span>Cộng tác viên: {{menu.user.fullName}}</span>
+    </div>
+
+  </div>
+</div>
