@@ -17,6 +17,7 @@ import { AddCustomerComponent } from "../pages/add-customer/add-customer.compone
     CommonModule,
     FormsModule,
     RouterModule.forChild(LayoutRoutes),
+    IonicModule
   ],
   declarations: [
     LoginComponent,
