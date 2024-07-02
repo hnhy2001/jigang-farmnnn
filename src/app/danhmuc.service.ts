@@ -3,7 +3,7 @@ import { Injectable } from "@angular/core";
 import { OPERATIONS } from "../app/app.constants";
 import { createRequestOption } from "../shared/utils/request";
 import { Observable, Subject } from "rxjs";
-import { environment } from "src/environments/environment";
+import { environment } from "src/environments/environment.prod";
 
 @Injectable({ providedIn: "root" })
 export class DanhMucService {
